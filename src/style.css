@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  min-height: 650px;
+  margin: 0 auto;
+  background: #1D1D20;
+  position: relative;
+  display: flex;
+  padding: 50px;
+}
+
+.left,
+.right {
+  padding-top: 8rem;
+  flex: 1;
+  margin-left: 0.5rem;
+  height: 100%;
+  position: relative;
+}
+
+.welcome {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+
+.left-desc {
+  display: flex;
+  padding: 30px;
+  margin-left: 9rem;
+}
+
+.hr_row {
+  width: 10px;
+  height: 70px;
+  background: linear-gradient(goldenrod, orangered);
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.content p {
+  font-weight: 400;
+  color: lightslategray;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.project {
+  font-size: 1.5rem;
+  color: lightslategray;
+}
+
+.projectList {
+  position: absolute;
+  right: 12rem;
+  top: 11rem;
+}
+
+
+.projectList ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.projectList ul li a {
+  margin-top: 10px;
+  color: lightslategray;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.angleSmall {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 15rem;
+  top: 10.5rem;
+  clip-path: polygon(0 0, 69% 0, 69% 4%, 3% 3%, 3% 70%, 0 70%);
+  background: linear-gradient(orangered, goldenrod);
+  filter: opacity(0.7);
+}
+
+.leftAngel {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+  clip-path: polygon(0 0, 69% 0, 69% 4%, 3% 3%, 3% 70%, 0 70%);
+  background: linear-gradient(orangered, goldenrod);
+  filter: opacity(0.7);
+}
+
+.rightAngel {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+  clip-path: polygon(0 0, 69% 0, 69% 4%, 3% 3%, 3% 70%, 0 70%);
+  background: linear-gradient(orangered, goldenrod);
+  transform: rotate(180deg);
+}
